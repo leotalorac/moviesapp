@@ -1,0 +1,20 @@
+.carrousel-component-container{
+    margin: 10px 10px;
+    border-radius: 5px;
+    flex: 0 0 250px;
+    position: relative;
+    /*overflow: hidden;*/
+}
+@media only screen and (max-width: 600px) {
+    .carrousel-component-container{
+        flex: 0 0 30vw;
+        margin: 2%;
+    }
+}
+
+.carrousel-movie-image{
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    left: 0;
+}

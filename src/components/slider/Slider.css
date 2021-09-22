@@ -1,0 +1,54 @@
+.slider-container{
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior:smooth;
+}
+.slider-controls{
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+
+}
+@media only screen and (max-width: 600px) {
+    .slider-container{
+        height: 35vh;
+    }
+    .left-slider-button, .right-slider-button{
+        top: 15vh;
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    .left-slider-button, .right-slider-button{
+        top: 20vh;
+    }
+
+}
+.slider-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.left-slider-button{
+    position: absolute;
+    padding-left: 10px;
+    left: 0;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.right-slider-button{
+    position: absolute;
+    padding-right: 10px;
+    right: 0;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
