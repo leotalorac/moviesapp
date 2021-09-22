@@ -1,17 +1,26 @@
-import './App.css';
-import Carrousel from './components/carrousel/Carrousel';
+import { Route, BrowserRouter, Switch } from "react-router-dom";
+import "./App.css";
+import Carrousel from "./components/carrousel/Carrousel";
 
-import MainHeader from './components/header/MainHeader';
-import Slider from "./components/slider/Slider"
+import MainHeader from "./components/header/MainHeader";
+import MainPage from "./components/mainpage/MainPage";
+import MovieInfo from "./components/movieinfo/MovieInfo";
+import Slider from "./components/slider/Slider";
 
 function App() {
   return (
     <div className="App">
-      <MainHeader/>
-      <Slider/>
-      <Carrousel title="Section 1"/>
-      <Carrousel title="Section 2"/>
-      <Carrousel title="Section 3"/>
+      <BrowserRouter>
+        <MainHeader />
+        <Switch>
+          <Route path="/" exact>
+            <MainPage />
+          </Route>
+          <Route path="/:id">
+            <MovieInfo />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

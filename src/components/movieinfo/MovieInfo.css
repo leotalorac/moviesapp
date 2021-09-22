@@ -1,0 +1,56 @@
+.movieinfo-container{
+    display: flex;
+    /* height: 70vh; */
+    background-color: black;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    .movieinfo-container{
+        flex-direction: column;
+    }
+    .movie-image img{
+        height: 50vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .movie-image img{
+        height: 30vw;
+    }
+
+}
+
+.movie-image{
+    /* width: 10vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.movie-info{
+    padding: 5%;
+    font-family: Roboto;
+    text-align: start;
+}
+.movie-info h1{
+    font-size: 3rem;
+}
+.movie-info h2{
+    font-size: 2rem;
+}
+.movie-info p{
+    font-size: 1rem;
+}
+
+.trailer-container{
+    color: white;
+    
+}
+.trailer-container h2{
+    font-size: 2rem;
+}
+.video-trailer{
+    width: 80vw;
+    height: 50vw;
+    margin: 2%;
+}

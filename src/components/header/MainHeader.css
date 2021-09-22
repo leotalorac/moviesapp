@@ -42,6 +42,28 @@ header{
     opacity: .5;
     font-weight: lighter;
 }
+
+.search-result{
+    position: absolute;
+    background-color:rgba(24, 33, 49,.5);
+    /* background-color: #182131; */
+    color: white;
+    left: 7%;
+    width: 80%;
+    z-index: 10;
+}
+.search-item{
+    /* background-color: #182131; */
+    padding: 2%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-item img{
+    height: 100%;
+}
+
+
 @media only screen and (max-width: 600px) {
     header{
         height: 10vh;
