@@ -3,7 +3,7 @@
     border-radius: 5px;
     flex: 0 0 250px;
     position: relative;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
     .carrousel-component-container{
@@ -15,6 +15,13 @@
 .carrousel-movie-image{
     position: absolute;
     border-radius: 5px;
-    width: 100%;
+    width: auto;
+    height: 110%;
     left: 0;
+}
+.tooltip-text{
+    padding: 5%;
+}
+.tooltiptext p{
+    font-size: .8rem;
 }

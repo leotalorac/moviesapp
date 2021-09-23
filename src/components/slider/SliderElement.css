@@ -8,6 +8,13 @@
     overflow: hidden;
     z-index: 5;
 }
+
+.slider-container-element:last-child {
+    margin-right: 5%;
+  }
+.slider-container-element:first-child {
+    margin-left: 5%;
+}
 .slider-img-back{
     z-index: -20;
     position: absolute;
